@@ -1,0 +1,11 @@
+version: '2.1'
+
+services:
+  deeplearningwithpytorch:
+    image: dlwp
+    container_name: dlwp_anaconda
+    build: .
+    ports:
+      - 8889:8888
+    volumes: 
+      - .:/Documents

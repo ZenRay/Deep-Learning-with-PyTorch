@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  deeplearningwithpytorch:
+    container_name: dlwp
+    build: .
+    ports:
+      - 8889:8888
+    volumes: 
+      - .:/Documents
